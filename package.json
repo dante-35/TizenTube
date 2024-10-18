@@ -16,7 +16,8 @@
     "MediaFastForward",
     "MediaRewind",
     "MediaTrackNext",
-    "MediaTrackPrevious"
+    "MediaTrackPrevious",
+    "ChannelList"
   ],
   "repository": {
     "url": "https://github.com/reisxd/TizenTube"
