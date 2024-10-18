@@ -17,6 +17,7 @@
     "MediaRewind",
     "MediaTrackNext",
     "MediaTrackPrevious",
+    "Info",
     "ChannelList"
   ],
   "repository": {

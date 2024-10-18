@@ -150,12 +150,19 @@ function execute_once_dom_loaded() {
       if (evt.type === 'keydown') {
         modernUI();
       }
-    };
+    }
+     else if (evt.keyCode == 457) {
+      if (evt.type === 'keydown') {
+        setTimeout(() => {
+          showToast('Welcome to TizenTube', 'Press [GREEN] to open TizenTube Settings, press [BLUE] to open Video Speed Settings and press [RED] to open TizenTube Theme Settings.');
+        }, 2000);
+     }
+  };
     return true;
   }
 
-  // Red, Green, Yellow, Blue
-  // 403, 404, 405, 406
+  // Red, Green, Yellow, Blue , Info
+  // 403, 404, 405, 406 , 457
   // ---, 172, 170, 191
   document.addEventListener('keydown', eventHandler, true);
   document.addEventListener('keypress', eventHandler, true);
