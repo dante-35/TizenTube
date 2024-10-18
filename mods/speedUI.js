@@ -16,7 +16,7 @@ function execute_once_dom_loaded_speed() {
 
     const eventHandler = (evt) => {
         const currentSpeed = configRead('videoSpeed');
-        if (evt.keyCode == 406 || evt.keyCode == 191) {
+        if (evt.keyCode == 406 ||evt.keyCode == 10073 || evt.keyCode == 191) {
             evt.preventDefault();
             evt.stopPropagation();
             if (evt.type === 'keydown') {
@@ -105,8 +105,8 @@ function execute_once_dom_loaded_speed() {
         };
     }
 
-    // Red, Green, Yellow, Blue
-    // 403, 404, 405, 406
+    // Red, Green, Yellow, Blue ,ChannelList
+    // 403, 404, 405, 406, 	10073
     // ---, 172, 170, 191
     document.addEventListener('keydown', eventHandler, true);
     document.addEventListener('keypress', eventHandler, true);
